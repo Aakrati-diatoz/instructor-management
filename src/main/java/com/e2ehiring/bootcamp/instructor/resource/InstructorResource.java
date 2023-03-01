@@ -9,11 +9,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.e2ehiring.bootcamp.instructor.domain.Instructor;
 import com.e2ehiring.bootcamp.instructor.service.InstructorService;
 
-
+@RestController
+@RequestMapping("/api")
 public class InstructorResource {
 	
 	private static final Logger log = LoggerFactory.getLogger(InstructorResource.class);
